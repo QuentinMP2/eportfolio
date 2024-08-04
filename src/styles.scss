@@ -1,0 +1,113 @@
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+@import 'fonts.scss';
+@import 'colors.scss';
+
+body {
+    font-family: Poppins-Medium, sans-serif;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: $clr-white;
+    background-color: $clr-background;
+    margin: 0;
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 4rem 2rem 2rem 2rem;
+
+        h1 {
+            font-family: Poppins-Bold;
+            font-size: 1.7rem;
+            margin: 0;
+        }
+
+        p {
+            font-size: .9rem;
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 45rem) {
+    body {
+        main {
+            margin: 7rem 3rem 3rem 3rem;
+        
+            h1 {
+                font-size: 3.5rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 65rem) {
+    body {
+        main {
+            margin: 8rem 4rem 4rem 4rem;
+        
+            h1 {
+                font-size: 3.5rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 80rem) {
+    body {
+        main {
+            margin: 10rem 4rem 4rem 4rem;
+
+            h1 {
+                font-size: 4rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    body {
+        main {
+            margin: 12rem 6rem 6rem 6rem;
+
+            h1 {
+                font-size: 4.8rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 110rem) {
+    body {
+        main {
+            margin: 14rem 8rem 8rem 8rem;
+        
+            h1 {
+                font-size: 5.5rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

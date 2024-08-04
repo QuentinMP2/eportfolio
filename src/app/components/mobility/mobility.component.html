@@ -1,0 +1,35 @@
+<section class="mobility-container">
+    <div class="infos">
+        <img [src]="mobilitySourceImage">
+        <div class="titles">
+            <h1>{{mobilityDestination}}</h1>
+            <h2>{{mobilityPurpose}}</h2>
+            <h2>{{mobilityDuration}} weeks</h2>
+        </div>
+    </div>
+    <div class="summary">
+        <h2>Summary</h2>
+        <ul>
+            <li>{{mobilitySummary1}}</li>
+            <li>{{mobilitySummary2}}</li>
+            <li>{{mobilitySummary3}}</li>
+            <li>{{mobilitySummary4}}</li>
+        </ul>
+    </div>
+    <div class="learn-more">
+        <p-button (click)="showDialog()" label="Learn More"></p-button>
+        <p-dialog 
+            header="My trip to Japan" 
+            [modal]="true"
+            [(visible)]="visible" 
+            [style]="{ width: '50rem' }"
+            [baseZIndex]="50"
+        >
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </p-dialog>
+        <p>Learn More</p>
+    </div>
+</section>
