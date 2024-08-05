@@ -17,15 +17,14 @@
         </ul>
     </div>
     <div class="learn-more">
-        <p-button icon="pi pi-book" (click)="showDialog()" label="Learn More"></p-button>
+        <p-button icon="pi pi-book" (click)="displayDialog()" label="Learn More"></p-button>
         <p-dialog 
-            header="My trip to Japan" 
+            header="My trip to Japan"
             [modal]="true"
-            [(visible)]="visible" 
-            [style]="{ width: '50rem' }"
+            [(visible)]="visible"
+            [style]="{ width: '50rem', margin: '3rem' }"
         >
-            ALEEEEEEEEEEEED
+            More coming soon...
         </p-dialog>
-        <!-- <p>Learn More</p> -->
     </div>
 </section>
