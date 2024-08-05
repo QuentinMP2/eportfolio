@@ -28,10 +28,12 @@
 
         .titles {
             padding: 0 .5rem;
+            text-align: center;
 
             h1 {
                 text-transform: uppercase;
-                margin: 0;
+                margin: 0 0 -0.5rem 0;
+                text-align: center;
             }
         }
     }
@@ -75,7 +77,7 @@
 
             .titles {
                 h1 {
-                    font-size: 3rem;
+                    font-size: 2rem;
                 }
             }
         }
@@ -90,6 +92,10 @@
 
         .infos {
             .titles {
+                h1 {
+                    font-size: 2.2rem;
+                }
+
                 .pi {
                     font-size: 1.1rem;
                 }
@@ -114,6 +120,10 @@
 
         .infos {
             .titles {
+                h1 {
+                    font-size: 2.6rem;
+                }
+
                 .pi {
                     font-size: 1.3rem;
                 }
@@ -131,7 +141,15 @@
 }
 
 @media screen and (min-width: 90rem) {
-    
+    .mobility-container {
+        .infos {
+            .titles {
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 110rem) {
@@ -143,7 +161,7 @@
         .infos {
             .titles {
                 h1 {
-                    font-size: 3.5rem;
+                    font-size: 3.3rem;
                 }
 
                 .pi {
