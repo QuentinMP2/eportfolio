@@ -1,0 +1,33 @@
+.mobility-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media screen and (min-width: 45rem) {
+    .mobility-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 65rem) {
+    .mobility-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 80rem) {
+    
+}
+
+@media screen and (min-width: 90rem) {
+    .mobility-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 110rem) {
+
+}

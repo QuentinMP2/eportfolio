@@ -20,7 +20,7 @@
         gap: .5rem;
     
         img {
-            height: 5rem;
+            height: 7rem;
             width: 100%;
             object-fit: cover;
             border-radius: .25rem;
@@ -33,10 +33,6 @@
                 text-transform: uppercase;
                 margin: 0;
             }
-        }
-
-        .summary {
-            width: 100%;
         }
     }
 
@@ -57,15 +53,117 @@
     .learn-more {
         display: flex;
         justify-content: center;
-        background-color: $clr-primary;
-        border: $clr-primary-border solid .1rem;
-        border-radius: .25rem;
-        padding: .5rem 1rem;
+        // background-color: $clr-primary;
+        // border: $clr-primary-border solid .1rem;
+        // border-radius: .25rem;
+        // padding: .5rem 1rem;
         margin: 0 auto;
 
         p {
             font-size: 1rem;
             color: $clr-white;
+        }
+    }
+}
+
+@media screen and (min-width: 45rem) {
+    .mobility-container {
+        .infos {
+            img {
+                height: 10rem;
+            }
+
+            .titles {
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 65rem) {
+    .mobility-container {
+        h2 {
+            font-size: 1.1rem;
+        }
+
+        .infos {
+            .titles {
+                .pi {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        .summary {
+            ul {
+                li {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 80rem) {
+    .mobility-container {
+        h2 {
+            font-size: 1.3rem;
+        }
+
+        .infos {
+            .titles {
+                .pi {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        .summary {
+            ul {
+                li {
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    
+}
+
+@media screen and (min-width: 110rem) {
+    .mobility-container {
+        h2 {
+            font-size: 1.4rem;
+        }
+
+        .infos {
+            .titles {
+                h1 {
+                    font-size: 3.5rem;
+                }
+
+                .pi {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .summary {
+            ul {
+                li {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .learn-more {
+            .learn-more-button {
+                font-size: 5rem;
+            }
         }
     }
 }
