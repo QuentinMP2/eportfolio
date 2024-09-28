@@ -1,11 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { DialogModule } from 'primeng/dialog';
-import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-mobility',
   standalone: true,
-  imports: [DialogModule, ButtonModule],
   templateUrl: './mobility.component.html',
   styleUrl: './mobility.component.scss'
 })

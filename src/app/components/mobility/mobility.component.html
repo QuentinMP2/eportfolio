@@ -4,7 +4,7 @@
         <div class="titles">
             <h1>{{ mobilityDestination }}</h1>
             <h2>{{ mobilityPurpose }}</h2>
-            <h2><i class="pi pi-calendar"></i> {{ mobilityDuration }} weeks</h2>
+            <h2>{{ mobilityDuration }} weeks</h2>
         </div>
     </div>
     <div class="summary">
@@ -15,16 +15,5 @@
             <li>{{ mobilitySummary3 }}</li>
             <li>{{ mobilitySummary4 }}</li>
         </ul>
-    </div>
-    <div class="learn-more">
-        <p-button icon="pi pi-book" (click)="displayDialog()" label="Learn More"></p-button>
-        <p-dialog 
-            header="My trip to Japan"
-            [modal]="true"
-            [(visible)]="visible"
-            [style]="{ width: '50rem', margin: '3rem' }"
-        >
-            More coming soon...
-        </p-dialog>
     </div>
 </section>

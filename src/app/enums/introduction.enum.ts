@@ -1,7 +1,7 @@
 export enum IntroductionEnum {
     WelcomeTitle = 'Quentin Pointeau',
     WelcomeSubtitle = 'Student at ENSEEIHT',
-    WelcomeDescription = 'Hello ! I\'m Quentin Pointeau, currently at Toulouse INP - ENSEEIHT as a computer science student. Computing has always fascinated me because of the many possibilities it offers. As I have a strong interest in mathematics and computer science, I naturally chose to study engineering, which allows me to develop a wide range of hard and soft skills.',
+    WelcomeDescription = 'Hello ! I\'m Quentin Pointeau, currently at Toulouse INP - ENSEEIHT as a computer science student. IT has always fascinated me because of the many possibilities it offers. As I have a strong interest in mathematics and computer science, I naturally chose to study engineering, which allows me to develop a wide range of hard and soft skills.',
     
     EngineeringTitle = 'Engineering Course',
     EngineeringDescription = '',
