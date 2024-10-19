@@ -1,0 +1,62 @@
+@import "../../../styles.scss";
+@import "../../../fonts.scss";
+@import "../../../colors.scss";
+
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px $clr-text;
+    gap: 20px;
+    transition: transform .2s ease;
+
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        p {
+            text-decoration: none;
+        }
+    }
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+}
+
+// Portrait phones
+@media screen and (max-width: $breakpoint-phones) {
+    .card-container {
+        height: 35px !important;
+        padding: 10px !important;
+        border-radius: 10px !important;
+    }
+}
+
+// Tablets
+@media (max-width: $breakpoint-tablets) {
+    .card-container {
+        height: 70px;
+        padding: 25px;
+
+        .text {
+            display: none;
+        }
+    }
+}

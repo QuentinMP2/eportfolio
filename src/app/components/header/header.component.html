@@ -1,0 +1,22 @@
+<section class="nav">
+    <div class="navbar" [ariaExpanded]="isMenuOpen">
+        <div class="permanent">
+            <div class="home">
+                <a (click)="isMenuOpen=false" routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><span class="material-symbols-outlined">home</span>Home</a>
+            </div>
+            <div class="burger">
+                <span (click)="onToggleMenu()" class="material-symbols-outlined">
+                    @if (isMenuOpen) {close} 
+                    @else {menu}
+                </span>
+            </div>
+        </div>
+        <div class="not-permanent">
+            <ul class="links" [ariaExpanded]="isMenuOpen">
+                <li><a (click)="onToggleMenu()" routerLink="/projects" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><span class="material-symbols-outlined">desktop_windows</span>Projects</a></li>
+                <li><a (click)="onToggleMenu()" routerLink="/hobbies" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><span class="material-symbols-outlined">sports_tennis</span>Hobbies</a></li>
+                <li><a (click)="onToggleMenu()" routerLink="/travels" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><span class="material-symbols-outlined">flight_takeoff</span>Travels</a></li>
+            </ul>  
+        </div>
+    </div>
+</section>

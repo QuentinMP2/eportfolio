@@ -1,0 +1,70 @@
+<section>
+    <section class="about-me">
+        <div class="presentation">
+            <h1>
+                You are <br>
+                <span class="title-accent">here</span>
+            </h1>
+            <h3>
+                {{LangEN.HomePresentationSubTitle}}
+            </h3>
+            <p>
+                {{LangEN.HomePresentation}}
+            <p>
+        </div>
+    
+        <div class="passport-container">
+            <div class="passport">
+                <div class="page">
+                    <div class="upper"></div>
+                    <div class="lower">
+                        <div class="top-text">
+                            {{topText}}
+                        </div>
+                        <div class="content">
+                            <div class="informations">
+                                First name: Quentin <br>
+                                Last name: Pointeau <br>
+                                Age: 20 <br>
+                                Status: Student <br>
+                                School: ENSEEIHT
+                            </div>
+                            <div class="image">
+                                <img src="../../../assets/images/pdp.jpg" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="bottom-text">
+                            <span>{{firstLineBottomText}}</span>
+                            <span>{{secondLineBottomText}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <h2>Contact</h2>
+    <h3>Let's stay in touch</h3>
+
+    <section class="contacts">
+        <app-contact
+            [name]="linkedInName"
+            [logo]="linkedInLogo"
+            [link]="linkedInLink"
+        >
+        </app-contact>
+        <app-contact
+            [name]="githubName"
+            [logo]="githubLogo"
+            [link]="githubLink"
+        >
+        </app-contact>
+        <app-contact
+            [name]="mailName"
+            [logo]="mailLogo"
+            [link]="mailLink"
+        >
+        </app-contact>
+    </section>
+</section>

@@ -1,0 +1,50 @@
+/* Fonts */
+@font-face {
+    font-family: "Poppins";
+    src: url(assets/fonts/Poppins/Poppins-Medium.ttf) format("truetype");
+}
+
+$font-family: "Poppins";
+
+// LINE-HEIGHT
+$line-height-h1: .9;
+$line-height-p: normal;
+
+// LETTER-SPACING
+$letter-spacing-h1: -9px;
+$letter-spacing-p: normal;
+
+$letter-spacing-h1-tablets: -5px;
+
+$letter-spacing-h1-phones: -5px;
+
+// FONT-WEIGHT
+$font-weight-h1: 1000;
+$font-weight-h2: 700;
+$font-weight-h3: 500;
+$font-weight-p: 500;
+$font-weight-p-bold: 600;
+
+// FONT-SIZE
+$font-size-h1: clamp(3vw, 7vw, 10vw);
+$font-size-h2: clamp(3.4vw,3.5vw,3.6vw);
+$font-size-h3: clamp(1.5vw, 1.7vw, 2.3vw);
+$font-size-p: clamp(.5vw, 1vw, 2vw);
+
+$font-size-h1-tablets: clamp(11.2vw,11.6vw,11.8vw);
+$font-size-h2-tablets: clamp(6.9vw,7vw,7.1vw);
+$font-size-h3-tablets: clamp(3.4vw,4vw,10vw);
+$font-size-p-tablets: clamp(2.2vw,2.3vw,2.4vw);
+
+$font-size-h1-phones: clamp(12vw,19vw,30vw);
+$font-size-h2-phones: clamp(9.9vw,10vw,10.1vw);
+$font-size-h3-phones: clamp(5.7vw,5.8vw,5.9vw);
+$font-size-p-phones: clamp(3.4vw,3.5vw,3.6vw);
+
+// SPACING
+$small-spacing: 12px;
+$medium-spacing: $small-spacing*2;
+$large-spacing: $medium-spacing*2;
+$xlarge-spacing: $large-spacing*2;
+$xxlarge-spacing: $xlarge-spacing*2;
+$xxxlarge-spacing: $xxlarge-spacing*2;

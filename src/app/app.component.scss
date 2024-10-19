@@ -1,0 +1,17 @@
+main {
+    margin: 10vh 15vw;
+}
+
+// Portrait phones
+@media screen and (max-width: 450px) {
+    main {
+        margin: 3vh 5vw !important;
+    }
+}
+
+// Tablets
+@media (max-width: 1050px) {
+    main {
+        margin: 5vh 10vw;
+    }
+}
