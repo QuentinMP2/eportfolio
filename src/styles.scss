@@ -68,7 +68,7 @@ $breakpoint-tablets: 1050px;
 }
 
 // Tablets
-@media (max-width: $breakpoint-tablets) {
+@media screen and (max-width: $breakpoint-tablets) {
     body {
         h1 {
             font-size: $font-size-h1-tablets;

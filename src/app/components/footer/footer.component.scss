@@ -1,0 +1,12 @@
+@import '../../../fonts.scss';
+@import '../../../styles.scss';
+
+footer {
+    height: $xlarge-spacing;
+}
+
+@media screen and (max-width: $breakpoint-phones) {
+    footer {
+        height: $xlarge-spacing - 30px;
+    }
+}
