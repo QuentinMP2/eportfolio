@@ -1,1 +1,37 @@
-<p>hobbies works!</p>
+<section>
+    <div class="center">
+        <h2>{{title}}</h2>
+        <p>{{introduction}}</p>
+    </div>
+
+    <section class="hobby-container">
+        <app-hobby
+        [name]="photo7Name"
+        [backgroundImg] = "photo7BackgroundImg"
+        [logo] = "photo7Logo"
+        [redirect]="photo7Redirect"
+    ></app-hobby>
+
+    <app-hobby
+        [name]="tvn7Name"
+        [backgroundImg] = "tvn7BackgroundImg"
+        [logo] = "tvn7Logo"
+        [redirect]="tvn7Redirect"
+    ></app-hobby>
+
+    <app-hobby
+        [name]="net7Name"
+        [backgroundImg] = "photo7BackgroundImg"
+        [logo] = "net7Logo"
+        [redirect]="net7Redirect"
+    ></app-hobby>
+
+    <app-hobby
+        [name]="thconName"
+        [backgroundImg] = "thconBackground"
+        [logo] = "thconLogo"
+        [isRounded]="true"
+        [redirect]="thconRedirect"
+    ></app-hobby>
+    </section>
+</section>

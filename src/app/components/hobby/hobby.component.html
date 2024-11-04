@@ -1,0 +1,14 @@
+<section>
+    <img class="background" [src]="backgroundImg" alt="background">
+    <div class="content">
+        <div class="logo-container">
+            <img [ngClass]="{'rounded': isRounded, 'logo': true}" [src]="logo" alt="logo">
+        </div>
+        
+        <div class="lower">
+            <h3>{{name}}</h3>
+            <a class="primary" href="">Learn more<span class="material-symbols-outlined">arrow_right_alt</span></a>
+            <a class="secondary" [href]="redirect" target="_blank">Visit website<span class="material-symbols-outlined">arrow_right_alt</span></a>
+        </div>    
+    </div>
+</section>
