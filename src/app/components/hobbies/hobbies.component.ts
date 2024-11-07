@@ -25,7 +25,8 @@ export class HobbiesComponent {
     SkillsEN.teamWorking,
     SkillsEN.eventManagement,
     SkillsEN.deadlines,
-    SkillsEN.communication
+    SkillsEN.communication,
+    SkillsEN.photography
   ];
 
   tvn7Name: string = 'TVn7';
