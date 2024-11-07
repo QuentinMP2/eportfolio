@@ -54,10 +54,7 @@ section {
             }
     
             .title-accent {
-                background: -webkit-linear-gradient(90deg, rgb(224, 50, 31) 0%, rgb(219, 106, 0) 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                overflow: visible;
+                color: $clr-primary;
             }
         }
     
