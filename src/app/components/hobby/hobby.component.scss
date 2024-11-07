@@ -6,6 +6,20 @@
     border-radius: 15px;
 }
 
+.no-display {
+    display: none;
+}
+
+.logo-container-template {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.logo {
+    width: 100%;
+}
+
 section {
     display: flex;
     position: relative;
@@ -32,23 +46,17 @@ section {
         padding: 30px;
         padding-bottom: 23px;
 
-
-        .logo-container {
-            display: flex;
-            justify-content: center;
+        .logo-container-card {
+            @extend .logo-container-template;
             align-items: flex-start;
-            overflow: hidden;
             width: 30%;
-
-            .logo {
-                width: 100%;
-            }
         }
         
         .lower {
             h3 {
                 font-weight: $font-weight-h2;
                 color: $clr-background;
+                margin-bottom: $small-spacing;
             }
 
             .hyperlink {
@@ -67,11 +75,132 @@ section {
             .primary {
                 @extend .hyperlink;
                 color: $clr-background;
+                cursor: pointer;
             }
 
             .secondary {
                 @extend .hyperlink;
                 color: $clr-text-secondary;
+                font-size: $font-size-p;
+            }
+
+            .dialog-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 60%;
+                gap: $large-spacing;
+                padding: 40px;
+                border: none;
+                border-radius: 15px;
+                transform: scale(1,1);
+
+                animation: slide-in .2s forwards;
+                @keyframes slide-in {
+                    from {
+                        transform: scale(0,0);
+                    }
+
+                    to {
+                        transform: scale(1,1);
+                    }
+                }
+
+                p {
+                    font-weight: $font-weight-p;
+                }
+
+                &::backdrop {
+                    background-image: rgba(0,0,0,1);
+                }
+
+                .header-dialog {
+                    display: flex;
+                    gap: $medium-spacing;
+                    width: 100%;
+
+                    .general-infos {
+                        display: flex;
+                        justify-content: flex-start;
+                        gap: $large-spacing;
+                        width: 100%;
+                        
+                        .logo-container-dialog {
+                            @extend .logo-container-template;
+                            align-items: center;
+                            width: 20%;
+                        }
+                        
+                        .name-hours {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+    
+                            h3 {
+                                font-size: 2.5vw;
+                                font-weight: $font-weight-h2;
+                                color: $clr-text;
+                                margin-bottom: $small-spacing;
+                            }
+    
+                            p {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: left;
+                                align-items: center;
+                                gap: 8px;
+                            }
+                        }
+                    }
+
+                    .close-button {
+                        position: relative;
+                        top: 0;
+                        right: 0;
+    
+                        .close {
+                            font-size: $font-size-h2;
+                            cursor: pointer;
+                            transform: scale(1);
+                            transition: transform .1s ease;
+
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+
+
+                .description-skills {
+                    display: flex;
+                    flex-direction: row;
+                    gap: $large-spacing;
+
+                    .description {
+                        text-align: justify;
+                    }
+
+                    .skills {
+                        min-width: 30%;
+
+                        .strong {
+                            font-weight: $font-weight-p-bold;
+                            color: $clr-text;
+                            font-size: 1.5vw;
+                            margin-bottom: $small-spacing;
+                        }
+
+                        ul {
+                            li {
+                                font-size: $font-size-p;
+                                display: flex;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+
             }
         }
     }
@@ -87,11 +216,104 @@ section {
         .content {
             padding: 20px;
             padding-bottom: 14px;
+
+            .lower {
+                h3 {
+                    margin-bottom: 0 !important;
+                }
+
+                .dialog-box {
+                    width: 80% !important;
+                    padding: 20px;
+                    gap: $medium-spacing;
+
+                    .header-dialog {
+                        .general-infos {
+                            gap: $medium-spacing;
+    
+                            .logo-container-dialog {
+                                width: 30%;
+                            }
+                        }
+
+                        .close-button {
+                            .close {
+                                font-size: $font-size-h2-phones !important;
+                            }
+                        }
+                    }
+
+
+                    .description-skills {
+                        gap: $medium-spacing;
+
+                        .skills {
+                            .strong {
+                                font-size: 4.3vw !important;
+                            }
+
+                            ul {
+                                li {
+                                    font-size: $font-size-p-phones !important;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .secondary {
+                    font-size: $font-size-p-phones !important;
+                }
+            }
         }
     }
 }
 
 // Tablets
 @media screen and (max-width: $breakpoint-tablets) {
+    section {
+        .content {
+            .lower {
+                .dialog-box {
+                    width: 70%;
 
+                    .header-dialog {
+                        .general-infos {
+                            .name-hours {
+                                h3 {
+                                    font-size: 3.5vw;
+                                }
+                            }
+                        }
+
+                        .close-button {
+                            .close {
+                                font-size: $font-size-h2-tablets;
+                            }
+                        }
+                    }
+
+                    .description-skills {
+                        flex-direction: column;
+                        
+                        .skills {
+                            .strong {
+                                font-size: 3vw;
+                            }
+
+                            ul {
+                                li {
+                                    font-size: $font-size-p-tablets;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .secondary {
+                    font-size: $font-size-p-tablets;
+                }
+            }
+        }
+    }
 }

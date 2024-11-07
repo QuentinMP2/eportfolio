@@ -28,6 +28,10 @@
 // Portrait phones
 @media screen and (max-width: $breakpoint-phones) {
     .center {
+        h2 {
+            line-height: $line-height-h2-phones;
+        }
+
         p {
             margin-bottom: $large-spacing;
         }

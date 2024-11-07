@@ -1,14 +1,48 @@
 <section>
     <img class="background" [src]="backgroundImg" alt="background">
     <div class="content">
-        <div class="logo-container">
+        <div class="logo-container-card">
             <img [ngClass]="{'rounded': isRounded, 'logo': true}" [src]="logo" alt="logo">
         </div>
         
         <div class="lower">
             <h3>{{name}}</h3>
-            <a class="primary" href="">Learn more<span class="material-symbols-outlined">arrow_right_alt</span></a>
+            <p class="primary show-button" (click)="onShowDialog(dialogBox)" [ariaExpanded]="isDialogBoxOpen" >Learn more<span class="material-symbols-outlined">library_books</span></p>
             <a class="secondary" [href]="redirect" target="_blank">Visit website<span class="material-symbols-outlined">arrow_right_alt</span></a>
+            <dialog [ngClass]="{'dialog-box': isDialogBoxOpen, 'no-display': !isDialogBoxOpen}" #dialogBox>
+                <div class="header-dialog">
+                    <div class="general-infos">
+                        <div class="logo-container-dialog">
+                            <img [ngClass]="{'rounded': isRounded, 'logo': true}" [src]="logo" alt="logo">
+                        </div>
+                        <div class="name-hours">
+                            <h3>{{name}}</h3>
+                            <p>
+                                <span class="material-symbols-outlined">calendar_clock</span>
+                                Roughly @if(nbHours) { {{nbHours}} } @else {too much} hours
+                            </p>
+                        </div>
+                    </div>
+                    <div class="close-button">
+                        <span class="material-symbols-outlined close" (click)="onCloseDialog(dialogBox)">close</span>
+                    </div>
+                </div>
+                <div class="description-skills">
+                    <p class="description">
+                        @if (description) { {{description}} } @else {Description is coming soon}
+                    </p>
+                    <div class="skills">
+                        <p class="strong">Main developped skills</p>
+                        <ul class="skills-list">
+                            @for (skill of skills; track skill) {
+                                <li><span class="material-symbols-outlined">arrow_right</span>{{ skill }}</li>
+                            } @empty {
+                                <li>No particular skills developped</li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </dialog>
         </div>    
     </div>
 </section>
