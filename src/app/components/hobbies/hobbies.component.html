@@ -1,8 +1,9 @@
 <section>
-    <div class="center">
-        <h2>{{title}}</h2>
-        <p>{{introduction}}</p>
-    </div>
+    <app-intro
+        [title]="title"
+        [introduction]="introduction"
+    >
+    </app-intro>
 
     <section class="hobby-container">
         <app-hobby

@@ -2,7 +2,7 @@
 @import "../../../colors.scss";
 @import "../../../fonts.scss";
 
-.hobby-container {
+.travels-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
@@ -10,14 +10,14 @@
 
 // Portrait phones
 @media screen and (max-width: $breakpoint-phones) {   
-    .hobby-container {
+    .travels-container {
         gap: 25px;
     }
 }
 
 // Tablets
 @media screen and (max-width: $breakpoint-tablets) {
-    .hobby-container {
+    .travels-container {
         grid-template-columns: repeat(1, 1fr);
     }
 }

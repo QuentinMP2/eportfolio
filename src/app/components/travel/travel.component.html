@@ -1,0 +1,17 @@
+<section class="card">
+    <div class="top">
+        <img class="picture" [src]="picture" alt="country picture">
+        <div class="country-duration">
+            <h2>{{ country }}</h2>
+            <h3><span class="material-symbols-outlined">calendar_clock</span>{{ duration }} weeks</h3>
+        </div>
+    </div>
+    <div class="bottom">
+        <h3>{{ purpose }}</h3>
+        <ul>
+            @for (item of summary; track item) {
+                <li><span class="material-symbols-outlined">arrow_right</span>{{ item }}</li>
+            }
+        </ul>
+    </div>
+</section>

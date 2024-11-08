@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IntroComponent } from '../intro/intro.component';
 import { HobbyComponent } from './../hobby/hobby.component';
 import { LangEN } from '../../enums/EN-en.enum';
 import { Links } from '../../enums/links.enum';
@@ -7,7 +8,7 @@ import { SkillsEN } from '../../enums/EN-skills.enums';
 @Component({
   selector: 'app-hobbies',
   standalone: true,
-  imports: [HobbyComponent],
+  imports: [HobbyComponent, IntroComponent],
   templateUrl: './hobbies.component.html',
   styleUrl: './hobbies.component.scss'
 })
