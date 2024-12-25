@@ -1,6 +1,6 @@
-@import "../../../styles.scss";
-@import "../../../fonts.scss";
-@import "../../../colors.scss";
+@use "../../../styles.scss";
+@use "../../../fonts.scss";
+@use "../../../colors.scss";
 
 .card-container {
     display: flex;
@@ -10,7 +10,7 @@
     height: 50px;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0px 0px 10px $clr-text;
+    box-shadow: 0px 0px 10px colors.$clr-text;
     gap: 20px;
     transition: transform .2s ease;
 
@@ -41,7 +41,7 @@
 }
 
 // Portrait phones
-@media screen and (max-width: $breakpoint-phones) {
+@media screen and (max-width: styles.$breakpoint-phones) {
     .card-container {
         height: 35px !important;
         padding: 10px !important;
@@ -50,7 +50,7 @@
 }
 
 // Tablets
-@media (max-width: $breakpoint-tablets) {
+@media (max-width: styles.$breakpoint-tablets) {
     .card-container {
         height: 70px;
         padding: 25px;

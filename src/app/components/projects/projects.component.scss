@@ -1,13 +1,13 @@
-@import "../../../styles.scss";
-@import "../../../colors.scss";
-@import "../../../fonts.scss";
+@use "../../../styles.scss";
+@use "../../../colors.scss";
+@use "../../../fonts.scss";
 
 // Portrait phones
-@media screen and (max-width: $breakpoint-phones) {   
+@media screen and (max-width: styles.$breakpoint-phones) {   
 
 }
 
 // Tablets
-@media screen and (max-width: $breakpoint-tablets) {
+@media screen and (max-width: styles.$breakpoint-tablets) {
 
 }

@@ -1,6 +1,6 @@
-@import "../../../styles.scss";
-@import "../../../colors.scss";
-@import "../../../fonts.scss";
+@use "../../../styles.scss";
+@use "../../../colors.scss";
+@use "../../../fonts.scss";
 
 .travels-container {
     display: grid;
@@ -9,14 +9,14 @@
 }
 
 // Portrait phones
-@media screen and (max-width: $breakpoint-phones) {   
+@media screen and (max-width: styles.$breakpoint-phones) {   
     .travels-container {
         gap: 25px;
     }
 }
 
 // Tablets
-@media screen and (max-width: $breakpoint-tablets) {
+@media screen and (max-width: styles.$breakpoint-tablets) {
     .travels-container {
         grid-template-columns: repeat(1, 1fr);
     }

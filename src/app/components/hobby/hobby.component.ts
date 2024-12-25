@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-hobby',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './hobby.component.html',
-  styleUrl: './hobby.component.scss'
+    selector: 'app-hobby',
+    standalone: true,
+    imports: [CommonModule],
+    templateUrl: './hobby.component.html',
+    styleUrl: './hobby.component.scss'
 })
 export class HobbyComponent implements OnInit {
   @Input({required: true}) name: string = '';

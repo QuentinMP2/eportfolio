@@ -6,11 +6,11 @@ import { JapanEN } from '../../enums/EN-japan.enum';
 import { JapanGLOBAL } from '../../enums/GLOBAL-japan.enum';
 
 @Component({
-  selector: 'app-travels',
-  standalone: true,
-  imports: [IntroComponent, TravelComponent],
-  templateUrl: './travels.component.html',
-  styleUrl: './travels.component.scss'
+    selector: 'app-travels',
+    standalone: true,
+    imports: [IntroComponent, TravelComponent],
+    templateUrl: './travels.component.html',
+    styleUrl: './travels.component.scss'
 })
 export class TravelsComponent {
   title: string = LangEN.TravelsTitle;

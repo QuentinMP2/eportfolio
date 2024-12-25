@@ -1,42 +1,42 @@
-@import 'fonts.scss';
-@import 'colors.scss';
+@use 'fonts.scss';
+@use 'colors.scss';
 
 body {
-    font-family: $font-family;
-    color: $clr-text;
-    background-color: $clr-background;
+    font-family: fonts.$font-family;
+    color: colors.$clr-text;
+    background-color: colors.$clr-background;
     margin: 0;
 
     h1 {
-        font-size: $font-size-h1;
-        font-weight: $font-weight-h1;
-        line-height: $line-height-h1;
-        letter-spacing: $letter-spacing-h1;
+        font-size: fonts.$font-size-h1;
+        font-weight: fonts.$font-weight-h1;
+        line-height: fonts.$line-height-h1;
+        letter-spacing: fonts.$letter-spacing-h1;
         margin: 0;
     }
 
     h2 {
-        font-size: $font-size-h2;
-        font-weight: $font-weight-h2;
-        letter-spacing: $letter-spacing-h2;
+        font-size: fonts.$font-size-h2;
+        font-weight: fonts.$font-weight-h2;
+        letter-spacing: fonts.$letter-spacing-h2;
         margin: 0;
     }
 
     h3 {
-        font-size: $font-size-h3;
-        font-weight: $font-weight-h3;
+        font-size: fonts.$font-size-h3;
+        font-weight: fonts.$font-weight-h3;
         margin: 0;
     }
 
     p {
-        font-size: $font-size-p;
-        font-weight: $font-weight-p;
+        font-size: fonts.$font-size-p;
+        font-weight: fonts.$font-weight-p;
         margin: 0;
     }
 
     a {
         text-decoration: none;
-        color: $clr-text;
+        color: colors.$clr-text;
     }
 
     ul {
@@ -55,8 +55,8 @@ body {
         border-style: none;
         border-radius: 10px;
         box-shadow: none;
-        background-color: $clr-primary;
-        color: $clr-background;
+        background-color: colors.$clr-primary;
+        color: colors.$clr-background;
 
         a {
             color: inherit;
@@ -79,21 +79,21 @@ $breakpoint-tablets: 1050px;
 @media screen and (max-width: $breakpoint-phones) {
     body {
         h1 {
-            font-size: $font-size-h1-phones !important;
-            letter-spacing: $letter-spacing-h1-phones !important;
+            font-size: fonts.$font-size-h1-phones !important;
+            letter-spacing: fonts.$letter-spacing-h1-phones !important;
         }
 
         h2 {
-            font-size: $font-size-h2-phones !important;
+            font-size: fonts.$font-size-h2-phones !important;
         }
     
         h3 {
-            font-size: $font-size-h3-phones !important;
+            font-size: fonts.$font-size-h3-phones !important;
 
         }
     
         p {
-            font-size: $font-size-p-phones !important;
+            font-size: fonts.$font-size-p-phones !important;
         }
     }
 }
@@ -102,20 +102,20 @@ $breakpoint-tablets: 1050px;
 @media screen and (max-width: $breakpoint-tablets) {
     body {
         h1 {
-            font-size: $font-size-h1-tablets;
-            letter-spacing: $letter-spacing-h1-tablets !important;
+            font-size: fonts.$font-size-h1-tablets;
+            letter-spacing: fonts.$letter-spacing-h1-tablets !important;
         }
 
         h2 {
-            font-size: $font-size-h2-tablets;
+            font-size: fonts.$font-size-h2-tablets;
         }
     
         h3 {
-            font-size: $font-size-h3-tablets;
+            font-size: fonts.$font-size-h3-tablets;
         }
     
         p {
-            font-size: $font-size-p-tablets;
+            font-size: fonts.$font-size-p-tablets;
         }
     }
 }

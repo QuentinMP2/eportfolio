@@ -6,11 +6,11 @@ import { Links } from '../../enums/links.enum';
 import { SkillsEN } from '../../enums/EN-skills.enums';
 
 @Component({
-  selector: 'app-hobbies',
-  standalone: true,
-  imports: [HobbyComponent, IntroComponent],
-  templateUrl: './hobbies.component.html',
-  styleUrl: './hobbies.component.scss'
+    selector: 'app-hobbies',
+    standalone: true,
+    imports: [HobbyComponent, IntroComponent],
+    templateUrl: './hobbies.component.html',
+    styleUrl: './hobbies.component.scss'
 })
 export class HobbiesComponent {
   title: string = LangEN.HobbiesTitle;

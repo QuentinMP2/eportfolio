@@ -1,6 +1,6 @@
-@import "../../../styles.scss";
-@import "../../../colors.scss";
-@import "../../../fonts.scss";
+@use "../../../styles.scss";
+@use "../../../colors.scss";
+@use "../../../fonts.scss";
 
 .material-symbols-outlined {
     font-variation-settings:
@@ -25,9 +25,9 @@
         align-items: center;
         width: 100%;
         padding: 30px 40px;
-        background-color: $clr-background;
-        color: $clr-text;
-        font-weight: $font-weight-p-bold;
+        background-color: colors.$clr-background;
+        color: colors.$clr-text;
+        font-weight: fonts.$font-weight-p-bold;
 
         .permanent {
             display: flex;
@@ -45,7 +45,7 @@
                 }
         
                 a:hover {
-                    color: $clr-primary;
+                    color: colors.$clr-primary;
                 }
             }
 
@@ -76,7 +76,7 @@
                 }
         
                 li > a:hover {
-                    color: $clr-primary;
+                    color: colors.$clr-primary;
                 }
             }
         }
@@ -84,12 +84,12 @@
 }
 
 // Portrait phones
-@media screen and (max-width: $breakpoint-phones) {
+@media screen and (max-width: styles.$breakpoint-phones) {
 
 }
 
 // Tablets
-@media screen and (max-width: $breakpoint-tablets) {    
+@media screen and (max-width: styles.$breakpoint-tablets) {    
     .nav {
         .navbar {
             flex-direction: column;
