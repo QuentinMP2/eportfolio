@@ -42,6 +42,7 @@ export class HobbiesComponent {
   ];
 
   net7Name: string = 'net7';
+  net7BackgroundImg = '../../../assets/images/net7_background.jpg';
   net7Logo: string = '../../../assets/images/net7.png';
   net7Redirect: string = Links.Net7;
   net7Description: string = LangEN.net7Description;

@@ -3,6 +3,7 @@ import { NotfoundComponent } from './components/notfound/notfound.component';
 import { HomeComponent } from './components/home/home.component';
 import { HobbiesComponent } from './components/hobbies/hobbies.component';
 import { TravelsComponent } from './components/travels/travels.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 export const routes: Routes = [{
     path: '',
@@ -11,6 +12,9 @@ export const routes: Routes = [{
 }, {
     path: 'home',
     component: HomeComponent
+}, {
+    path: 'projects',
+    component: ProjectsComponent
 }, {
     path: 'engagement',
     component: HobbiesComponent

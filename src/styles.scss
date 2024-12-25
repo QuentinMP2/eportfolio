@@ -4,6 +4,8 @@
 body {
     font-family: $font-family;
     color: $clr-text;
+    background-color: $clr-background;
+    margin: 0;
 
     h1 {
         font-size: $font-size-h1;
@@ -55,6 +57,10 @@ body {
         box-shadow: none;
         background-color: $clr-primary;
         color: $clr-background;
+
+        a {
+            color: inherit;
+        }
 
         &:focus {
             outline: none;

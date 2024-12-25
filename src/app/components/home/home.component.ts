@@ -27,4 +27,28 @@ export class HomeComponent {
   mailName: string = 'contact@quentin-pointeau.fr';
   mailLogo: string = '../../../assets/icons/gmail.svg';
   mailLink: string = 'mailto:contact@quentin-pointeau.fr';
+
+  resumeUrl: string = '../../../assets/pdf/resume_en.pdf';
+  resumeName: string = 'RESUME_QUENTIN_POINTEAU';
+
+  downloadPdf(fileUrl: string, fileName: string): void {
+    fetch(fileUrl)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.blob();
+      })
+      .then(blob => {
+        const url = window.URL.createObjectURL(blob);
+        const anchor = document.createElement('a');
+        anchor.href = url;
+        anchor.download = fileName;
+        anchor.click();
+        window.URL.revokeObjectURL(url);
+      })
+      .catch(error => {
+        console.error('File download failed:', error);
+      });
+  }
 }
