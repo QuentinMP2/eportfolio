@@ -33,7 +33,17 @@ export class HomeComponent {
   resumeNameEn: string = 'RESUME_QUENTIN_POINTEAU_EN';
 
   resumeUrlFr: string = '../../../assets/pdf/resume_fr.pdf';
-  resumeNameFr: string = 'RESUME_QUENTIN_POINTEAU_FR';
+  resumeNameFr: string = 'CV_QUENTIN_POINTEAU_FR';
+
+  coverLetterUrlEn: string = '../../../assets/pdf/cover_letter_en.pdf';
+  coverLetterNameEn: string = 'COVER_LETTER_QUENTIN_POINTEAU';
+
+  coverLetterUrlFr: string = '../../../assets/pdf/cover_letter_fr.pdf';
+  coverLetterNameFr: string = 'LETTRE_DE_MOTIVATION_QUENTIN_POINTEAU';
+
+  jobAdUrl: string = '../../../assets/pdf/job_ad.pdf';
+  jobAdName: string = 'JOB_AD_QUENTIN_POINTEAU';
+
 
   downloadPdf(fileUrl: string, fileName: string): void {
     fetch(fileUrl)
