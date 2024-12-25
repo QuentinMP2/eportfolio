@@ -53,6 +53,10 @@ section {
                 text-align: justify;
                 margin-bottom: fonts.$medium-spacing;
             }
+
+            p-button{
+                margin-bottom: fonts.$small-spacing;
+            }
     
             .title-accent {
                 color: colors.$clr-primary;

@@ -3,5 +3,6 @@ export enum Links {
     TVn7 = 'https://tvn7.fr',
     Net7 = 'https://net7.dev',
     CapitoleDuLibre = 'https://capitoledulibre.org',
-    THCon = 'https://thcon.party'
+    THCon = 'https://thcon.party',
+    TMRE = 'https://toulouserunexperience.fr'
 }

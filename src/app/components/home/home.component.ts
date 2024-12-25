@@ -1,11 +1,12 @@
 import { LangEN } from './../../enums/EN-en.enum';
 import { Component } from '@angular/core';
 import { ContactComponent } from "../contact/contact.component";
+import { ButtonModule } from 'primeng/button';
 
 @Component({
     selector: 'app-home',
     standalone: true,
-    imports: [ContactComponent],
+    imports: [ContactComponent, ButtonModule],
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss'
 })
@@ -28,8 +29,11 @@ export class HomeComponent {
   mailLogo: string = '../../../assets/icons/gmail.svg';
   mailLink: string = 'mailto:contact@quentin-pointeau.fr';
 
-  resumeUrl: string = '../../../assets/pdf/resume_en.pdf';
-  resumeName: string = 'RESUME_QUENTIN_POINTEAU';
+  resumeUrlEn: string = '../../../assets/pdf/resume_en.pdf';
+  resumeNameEn: string = 'RESUME_QUENTIN_POINTEAU_EN';
+
+  resumeUrlFr: string = '../../../assets/pdf/resume_fr.pdf';
+  resumeNameFr: string = 'RESUME_QUENTIN_POINTEAU_FR';
 
   downloadPdf(fileUrl: string, fileName: string): void {
     fetch(fileUrl)

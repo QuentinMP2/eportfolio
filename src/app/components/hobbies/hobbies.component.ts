@@ -54,6 +54,20 @@ export class HobbiesComponent {
     SkillsEN.webDevelopment
   ];
 
+  CDLName: string = 'Capitole du Libre';
+  CDLBackground: string = '../../../assets/images/cdl_background.jpg';
+  CDLLogo: string = '../../../assets/images/cdl.png';
+  CDLRedirect: string = Links.CapitoleDuLibre;
+  CDLDescription: string = LangEN.CDLDescription;
+  CDLNbHours: number = 25;
+  CDLSkills: string[] = [
+    SkillsEN.communication,
+    SkillsEN.deadlines,
+    SkillsEN.teamManagement,
+    SkillsEN.teamWorking,
+    SkillsEN.photography
+  ]
+
   thconName: string = 'THCon';
   thconBackground: string = '../../../assets/images/thcon_background.jpg';
   thconLogo: string = '../../../assets/images/thcon.jpg';
@@ -63,4 +77,14 @@ export class HobbiesComponent {
   thconSkills: string[] = [
     SkillsEN.teamWorking
   ];
+
+  TMREName: string = 'Toulouse Métropole Run Experience';
+  TMREBackground: string = '../../../assets/images/tmre_background.jpg';
+  TMRELogo: string = '../../../assets/images/tmre.png';
+  TMRERedirect: string = Links.TMRE;
+  TMREDescription: string = LangEN.TMREDescription;
+  TMRENbHours: number = 4;
+  TMRESkills: string[] = [
+    SkillsEN.teamWorking
+  ]
 }

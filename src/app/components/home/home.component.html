@@ -10,8 +10,9 @@
             </h3>
             <p>
                 {{LangEN.HomePresentation}}
-            <p>
-            <button class="button" (click)="downloadPdf(resumeUrl, resumeName)">Get my resume</button>
+            </p>
+            <p-button label="Get my resume (English)" severity="primary" icon="pi pi-download" (onClick)="downloadPdf(resumeUrlEn, resumeNameEn)"/>
+            <p-button label="Get my resume (French)" severity="primary" icon="pi pi-download" (onClick)="downloadPdf(resumeUrlFr, resumeNameFr)"/>
         </div>
     
         <div class="passport-container">
