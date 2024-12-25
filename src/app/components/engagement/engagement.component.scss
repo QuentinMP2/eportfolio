@@ -1,0 +1,23 @@
+@use "../../../styles.scss";
+@use "../../../colors.scss";
+@use "../../../fonts.scss";
+
+.engagement-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+// Portrait phones
+@media screen and (max-width: styles.$breakpoint-phones) {   
+    .engagement-container {
+        gap: 25px;
+    }
+}
+
+// Tablets
+@media screen and (max-width: styles.$breakpoint-tablets) {
+    .engagement-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
