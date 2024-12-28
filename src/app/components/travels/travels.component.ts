@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IntroComponent } from '../intro/intro.component';
 import { TravelComponent } from '../travel/travel.component';
+import { ButtonModule } from 'primeng/button';
 import { LangEN } from '../../enums/EN-en.enum';
 import { JapanEN } from '../../enums/EN-japan.enum';
 import { JapanGLOBAL } from '../../enums/GLOBAL-japan.enum';
@@ -8,7 +9,7 @@ import { JapanGLOBAL } from '../../enums/GLOBAL-japan.enum';
 @Component({
     selector: 'app-travels',
     standalone: true,
-    imports: [IntroComponent, TravelComponent],
+    imports: [IntroComponent, TravelComponent, ButtonModule],
     templateUrl: './travels.component.html',
     styleUrl: './travels.component.scss'
 })
@@ -25,4 +26,7 @@ export class TravelsComponent {
     JapanEN.Summary2,
     JapanEN.Summary3
   ]
+  japanReportName: string = 'INTERNSHIP_JAPAN';
+  japanReportUrl: string = '../../../assets/pdf/summer_internship_report_1A.pdf';
+  japanReportLabel: string = 'Internship Report';
 }

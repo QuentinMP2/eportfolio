@@ -13,5 +13,6 @@
                 <li><span class="material-symbols-outlined">arrow_right</span>{{ item }}</li>
             }
         </ul>
+        <p-button [label]="reportLabel" severity="primary" icon="pi pi-download" (onClick)="downloadPdf(reportUrl, reportName)"/>
     </div>
 </section>

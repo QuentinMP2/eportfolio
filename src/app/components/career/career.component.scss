@@ -1,0 +1,17 @@
+@use '../../../fonts.scss';
+
+section {
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: fonts.$large-spacing;
+    }
+
+    .internships {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: fonts.$large-spacing;
+    }
+}

@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
+    margin-bottom: fonts.$xlarge-spacing;
 }
 
 // Portrait phones

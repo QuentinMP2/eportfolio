@@ -4,11 +4,12 @@ import { HobbyComponent } from './../hobby/hobby.component';
 import { LangEN } from '../../enums/EN-en.enum';
 import { Links } from '../../enums/links.enum';
 import { SkillsEN } from '../../enums/EN-skills.enums';
+import { ImageandtextComponent } from "../imageandtext/imageandtext.component";
 
 @Component({
   selector: 'app-engagement',
   standalone: true,
-  imports: [HobbyComponent, IntroComponent],
+  imports: [HobbyComponent, IntroComponent, ImageandtextComponent],
   templateUrl: './engagement.component.html',
   styleUrl: './engagement.component.scss'
 })
@@ -62,4 +63,13 @@ export class EngagementComponent {
   TMRESkills: string[] = [
     SkillsEN.teamWorking
   ];
+
+  sulitestImg: string = '../../../assets/images/sulitest.png';
+  sulitestText: string = LangEN.SulitestText;
+
+  climateFrescoImg: string = '../../../assets/images/climate_fresco.jpg';
+  climateFrescoText: string = LangEN.ClimateFrescoText;
+
+  civicEngagementImg: string = '../../../assets/images/civic_engagement_poster.png'
+  civicEngagementText: string = LangEN.CivicEngagementPoster;
 }

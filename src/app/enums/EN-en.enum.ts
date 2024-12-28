@@ -5,13 +5,13 @@ export enum LangEN {
 
     /* ---------- PROJECTS ---------- */
     ProjectsTitle = 'Engineering Courses',
-    ProjectsIntroduction = 'You can find here shorts descriptions of the main courses I have as a computer science student at ENSEEIHT. Below, you will find my personnal projects.',
+    ProjectsIntroduction = 'You can find here shorts descriptions of the main courses I have as a computer science student at ENSEEIHT.',
 
     /* ---------- HOBBIES ----------- */
     HobbiesTitle = 'Hobbies',
     HobbiesIntroduction = 'These are my hobbies and the associations in which I have spent time.',
 
-    /* ---------- HOBBIES ----------- */
+    /* ---------- ENGAGEMENT ----------- */
     EngagementTitle = 'Civic Engagement',
     EngagementIntroduction = 'I enjoy getting involved in associations and actively participating in their events. Contributing my time and energy to support their goals gives me a sense of purpose and allows me to connect with others who share similar values. Whether organizing, assisting, or simply being present, I find fulfillment in making a positive impact through community initiatives.',
 
@@ -25,5 +25,16 @@ export enum LangEN {
 
     /* ---------- TRAVELS ----------- */
     TravelsTitle = 'International Mobility',
-    TravelsIntroduction = 'Sometimes I travel, you can find here my experiences!'
+    TravelsIntroduction = 'Sometimes I travel, you can find here my experiences!',
+
+    /* ---------- CAREER ---------- */
+    CareerTitle = 'PPP - Career Development',
+    CareerIntroduction = 'You will find in this section all the documents for the PPP presentation.',
+
+    /* ---------- OTHERS ---------- */
+    FermatText = 'The Classe Préparatoire aux Grandes Écoles (CPGE) MP2I/MPI at the Pierre de Fermat high school is a prestigious program in two years designed for students with a strong aptitude for mathematics, physics, and computer science. MP2I, stands for Mathématiques, Physique, Ingénierie et Informatique, is the first-year preparatory class that emphasizes the integration of computer science alongside traditional math and physics. This program serves as a gateway to the second-year MPI (Mathématiques, Physique et Informatique), which delves deeper into theoretical and applied topics, preparing students for competitive exams to enter engineering schools in France.',
+    N7Text = 'Since 2023, I\'m in Toulouse INP - ENSEEIHT as a computer science student. The first year of education was general and we covered the basics of different areas of computing. For my second year, I choose the ASR (Architecture, Systems and Networks) pathway. because it\'s the field that has attracted me the most and I\'m now building my career in this area. I have done some interesting school projects such as a mini compiler in Ocaml, a "peer-to-peer" downloader Java programme and built a fake ISP network with Docker.',
+    SulitestText = 'The Sustainability Literacy Test (Sulitest) is an international assessment tool designed to evaluate and enhance individuals\' knowledge of sustainability and global challenges. The test covers topics like climate change, biodiversity, human rights, and economic development. Here are my results.',
+    ClimateFrescoText = 'The Climate Fresco is an interactive, collaborative workshop designed to educate participants about climate change and its complexities. It uses a card game format to explore the science behind global warming, its causes, and its impacts, based on IPCC reports. Participants work together to connect cards representing different aspects of the climate system. It contributes to raising global awareness about climate change.',
+    CivicEngagementPoster = 'During soft skills courses last year, we design a civic engagement poster. For my group, it was about to help an association from one of my friend. this was in line with 3 of the united nations\' fundamental principles for sustainable development.',
 }

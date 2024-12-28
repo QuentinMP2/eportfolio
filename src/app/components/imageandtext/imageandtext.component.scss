@@ -1,0 +1,45 @@
+@use "../../../styles.scss";
+@use "../../../colors.scss";
+@use "../../../fonts.scss";
+
+section {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    align-items: center;
+    margin-bottom: fonts.$large-spacing;
+
+    .image {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .text {
+        width: 50%;
+        text-align: justify;
+    }
+}
+
+// Portrait phones
+@media screen and (max-width: styles.$breakpoint-phones) {   
+
+}
+
+// Tablets
+@media screen and (max-width: styles.$breakpoint-tablets) {
+    section {
+        flex-direction: column;
+        gap: 1rem;
+
+        .image {
+            width: 100%;
+        }
+
+        .text {
+            width: 100%;
+        }
+    }
+}

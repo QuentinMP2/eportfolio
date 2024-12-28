@@ -1,0 +1,22 @@
+<section>
+    <app-intro
+        [title]="title"
+        [introduction]="introduction"
+    >
+    </app-intro>
+
+    <div class="buttons">
+        <p-button label="PPP Slides" severity="primary" icon="pi pi-download" (onClick)="downloadPdf(PPPslidesUrl, PPPslidesName)"/>
+        <p-button label="Resume" severity="primary" icon="pi pi-download" (onClick)="downloadPdf(resumeUrlEn, resumeNameEn)"/>
+        <p-button label="CV" severity="primary" icon="pi pi-download" (onClick)="downloadPdf(resumeUrlFr, resumeNameFr)"/>
+        <p-button label="Cover letter" severity="primary" icon="pi pi-download" (onClick)="downloadPdf(coverLetterUrlEn, coverLetterNameEn)"/>
+        <p-button label="Lettre de motivation" severity="primary" icon="pi pi-download" (onClick)="downloadPdf(coverLetterUrlFr, coverLetterNameFr)"/>
+        <p-button label="Job ad" severity="primary" icon="pi pi-download" (onClick)="downloadPdf(jobAdUrl, jobAdName)"/>
+    </div>
+
+    <div class="internships">
+        <h2>Internship</h2>
+        <p>I have done an internship in Japan for 7 weeks, learn more about it with my report.</p>
+    </div>
+    <p-button label="Summer Internship Report" severity="primary" icon="pi pi-download" (onClick)="downloadPdf(Internship1AUrl, InternshipA1Name)"/>
+</section>
